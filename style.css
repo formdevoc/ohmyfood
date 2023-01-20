@@ -1,4 +1,5 @@
 /* Définition des polices personnalisées */
+
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 @font-face {
@@ -15,41 +16,6 @@
 ::before,
 ::after {
   box-sizing: border-box;
-}
-/* flex */
-
-.flex_around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.flex_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex_between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.flex_around_col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.flex_between_col {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.flex_center_col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 body {
   margin: 0;
@@ -183,7 +149,6 @@ main {
 .fonction ol {
   display: flex;
   font-weight: bold;
-  /* flex-direction: column; */
   gap: 1.5rem;
   width: 95%;
 }
@@ -338,7 +303,8 @@ footer p {
 footer i {
   margin-right: 0.5rem;
 }
-/* resto1 */
+/* restos */
+
 #page_resto {
   background-color: #f6f6f6;
 }
@@ -348,6 +314,14 @@ footer i {
   text-align: center;
   position: relative;
 }
+#page_resto a {
+  text-decoration: none;
+}
+
+#page_resto h1 {
+  color: black;
+}
+
 .banner img {
   display: block;
   width: 100%;
@@ -357,7 +331,6 @@ footer i {
 }
 #page_resto header:hover::before {
   transform: scale(1.2) translateY(-50%);
-  /*transform: translateY(-50%);*/
 }
 
 #page_resto header::before {
@@ -378,25 +351,16 @@ footer i {
 
 .resto-main {
   padding: 0 1rem;
-  margin-top: -2rem;
+  margin-top: -150px;
 }
-/*.resto-main h2 {
-  padding: 2rem 1rem;
-  border-radius: 2rem 2rem 0 0;
-heart
-}*/
-/*.resto_tittle {
-  margin-top: -2rem;
-}*/
 .resto_tittle {
   position: relative;
-  top: -80px;
+  top: -118px;
 }
 .resto_tittle h2 {
   font-family: "Shrikhand", cursive;
   padding: 2rem 1rem;
   background-color: #f6f6f6;
-  /*heart*/
   position: relative;
   border-radius: 2rem 2rem 0 0;
 }
@@ -463,7 +427,7 @@ heart
   text-transform: uppercase;
   font-weight: 400;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .menus h3::after {
   content: "";
@@ -493,7 +457,7 @@ heart
   background-color: white;
   border-radius: 1rem;
   overflow: hidden;
-  margin: 0.8rem;
+  margin: 14px;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
   animation: appear 1s;
   animation-fill-mode: both;
@@ -570,15 +534,16 @@ p {
 }
 
 .order {
-  height: 30vh;
+  height: 22vh;
   display: grid;
   place-items: center;
 }
 .order button {
+  width: 31%;
   color: white;
   padding: 1rem 2rem;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 16px;
   border: none;
   border-radius: 2rem;
   box-shadow: 2px 1px 8px -3px black;
@@ -595,13 +560,13 @@ p {
   transform: scale(1.02);
   opacity: 0.9;
 }
+
 /* Responsive  */
 
 /* Version desktop */
 
 @media screen and (min-width: 992px) {
   .fonction ol {
-    /* display: flex; */
   }
   .bloc_menu {
     grid-template-columns: repeat(2, 1fr);
